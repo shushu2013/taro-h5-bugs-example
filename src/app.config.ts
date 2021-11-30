@@ -26,6 +26,7 @@ export default {
     'pages/index/index',
     'pages/mine/index',
     'pages/detail/index',
+    'pages/test/index',
   ],
   window: {
     backgroundTextStyle: 'light',

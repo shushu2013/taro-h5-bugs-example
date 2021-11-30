@@ -16,22 +16,20 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  handleBtnClick() {
-    Taro.navigateTo({
-      url: '/pages/test/index',
-    })
+  handleClick = () => {
+    Taro.navigateBack()
   }
 
   render () {
     return (
       <View className='index'>
-        <Text className="mine-title">我的页面</Text>
+        <Text className="detail-title">测试页面</Text>
         <Button
+          onClick={this.handleClick}
+          className="btn"
           type="primary"
-          className="index-btn"
-          onClick={this.handleBtnClick}
         >
-          进入测试页
+          Go Back
         </Button>
       </View>
     )
